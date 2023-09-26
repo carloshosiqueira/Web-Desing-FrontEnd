@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.container2{
+    width: max-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.texto{
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    width: 600px;
+    height: 50%;
+    font-size:32px;
+}
+.login{
+    background-color:white;
+    width: 400px;
+    height: 400px;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1em rgba(116, 114, 114, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.login input{
+    width: 90%;
+    height: 15%;
+    border-radius: 5px;
+}
+.linha{
+    width: 95%;
+    height:1px;
+    background-color: rgba(116, 114, 114, 0.4)
+}
+.entrar{
+    color: white;
+    background-color:rgb(46, 136, 255);
+    border-radius: 5px;
+    width: 90%;
+    height: 15%;
+}
+.criar{
+    color: white;
+    background-color:green;
+    border-radius: 5px;
+    width: 60%;
+    height: 15%;
+}
+.face{
+    color: rgb(46, 136, 255);;
+}
+.texto2{
+    padding:10px;
+}
+footer{
+    background-color: white;
+    width: 100%;
+    height: 20%;
+}
+.texto2 a{
+    text-decoration: none;
+}
+.texto2 a:visited{
+    color:black;
+}

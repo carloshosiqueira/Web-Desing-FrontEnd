@@ -1,0 +1,8 @@
+body{
+    background-color: brown;
+}
+img{
+    width: 400px;
+    height: 400px;
+    border-radius: 10%;
+}

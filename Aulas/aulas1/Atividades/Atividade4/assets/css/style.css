@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+}
+main{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.direita{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imagem{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.imagem img{
+    width: 55%;
+    height: 55%;
+}
+.texto{
+    height: 10%;
+    width: 100%;
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    margin-bottom: 50px;
+}
+.inscreva{
+    height: 10%;
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+.login{
+    height: 40%;
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    align-self:flex-start;
+    color: white;
+    margin-bottom: 50px;
+}
+.baixo{
+    font-size: 30px;
+    height: 20%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    color: white;
+}
+.linha{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+.linha div{
+    width: 50%;
+    height: 1px;
+    background-color: gray;
+    margin: 10px;
+}
+.botao button img{
+    width:5%;
+    margin: 10px;
+}
+.botao{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 90%;
+    height: 20%;
+    margin: 10px;
+    border-radius: 50px;
+    font-size: 13px;
+    background-color: white;
+    color:black;
+}
+.criar{
+    height: 20%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:50px;
+    margin: 10px;
+    background-color:lightskyblue;
+    color:white;
+    font-weight: bold;
+}
+.botao img{
+    width:10%;
+}
+.botao, .criar, .entrar:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration:none;
+    color: lightblue;
+}
+a:visited{
+    color: lightblue;
+}
+.entrar{
+    height: 30%;
+    width: 90%;
+    margin: 10px;
+    border:0.5px solid gray;
+    color:lightblue;
+    font-weight: bold;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+ul{
+    color:gray;
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+}
+li{
+    margin: 10px;
+    list-style: none;
+}

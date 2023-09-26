@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vh;
+}
+
+header{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 15vh;
+    width: 100vw;
+    border-bottom:5px solid chocolate;
+}
+.IconKabum,.voltar,.logobaixo{
+    display: none;
+}
+.direita{
+    width: fit-content;
+    height:100%;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+.direita i{
+    font-size:40px;
+}
+
+.direita p{
+    color:white;
+    text-align: justify;
+    margin:30px;
+}
+
+.direita a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main{
+    height:65vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    height: 50vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.t1{
+    color:orangered;
+    font-size: 40px;
+    width: 100%;
+    text-align: left;
+}
+
+.titulo{
+    width: 100%;
+}
+
+.linhaazul{
+    height:3px;
+    background-color:blue;
+    width: 25%;
+}
+
+input{
+    width: 100%;
+    height: 10%;
+    padding: 10px;
+}
+
+button{
+    background-color: orangered;
+    height: 10%;
+    width: 100%;
+    color:white;
+    font-size: 20px;
+    border:none;
+    border-radius: 10px;
+}
+
+.senha{
+   text-align: right;
+  
+}
+
+.senha a{
+    color:gray;
+    font-size: 14px;
+}
+
+.senha a:visited{
+    color:gray;
+}
+
+.traco{
+    height:1px;
+    width: 100%;
+    background-color: lightgray
+}
+
+.sociais{
+    width:100%;
+    height: 15%;
+    margin-bottom: 30px;
+}
+
+.opcoes{
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.face{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    border:1px solid blue;
+    width: 150px;
+
+}
+
+.face p{
+    color:blue;
+}
+
+.facebook{
+    color:blue;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.google{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border:1px solid red;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.google p{
+    color:red;
+}
+
+.googlel{
+    color:red;
+    margin:10px;
+    font-size: 30px;
+}
+
+p{
+    text-align: center;
+    color:gray;
+    font-size:22px;
+}
+a{
+    color:orange
+}
+
+footer{
+    height: 20vh;
+    width: 100vw;
+}
+
+.cima{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cima img{
+    width: 10%;
+    height: 60%;
+}
+
+.meio{
+    background-color: lightblue;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meio div{
+    width: 20%;
+    margin: 20px;
+}
+
+.meio div p{
+    color:white;
+}
+
+.baixo{
+    background-color: darkblue;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.baixo div{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.baixo div p{
+    font-size: 12px;
+    color:white;
+}

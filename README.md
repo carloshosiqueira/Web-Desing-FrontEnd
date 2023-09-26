@@ -1,2 +1,2 @@
-# Web-Desing-FrontEnd
-Repositório para o curso de web design a tarde
+# Web-Designer-Front-End
+Repositório para os exercicios de Web Designer Front End

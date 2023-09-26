@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    background-color:black;
+    width: 100%;
+}
+.menu{
+    width: 50%;
+}
+.logo, .sociais{
+    width: 25%;
+}
+.logo img{
+    width: 200px;
+}
+.menu nav a{
+    color:white;
+    font-size: 24px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+.sociais button{
+    font-family: Arial, Helvetica, sans-serif;
+    padding:10px;
+    border-radius:10px;
+    font-size: 18px;
+}
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+}
+.container3{
+    display: flex;
+    align-items: center;
+    justify-content: center; padding-top: 
+    25px;
+}
+.espaco{
+    background-color:white;
+    width: 1%;
+}
+.div1{
+    border: 1px solid black;
+    width: 50%;
+    padding-left:10px
+}
+.div1 img{
+    width: 250px;
+}
+.div2{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border: 1px solid black;
+    width: 50%;
+    
+}
+.div2 img{
+    width: 250px;
+    height: 225px;
+    rotate: 180deg;
+}
+.div3{
+    border: 1px solid black;
+    width: 50%;
+    padding-left:10px;
+    text-align: center
+}
+.div4{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    border: 1px solid black;
+    width: 50%;
+}
+.div4 img{
+    width: 265px;
+}

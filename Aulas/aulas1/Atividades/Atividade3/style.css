@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+}
+.conteudo{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login{
+    border: 1px solid rgb(219,219,219);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 40vh;
+    width: 20vw;
+    margin: 10px;
+}
+.face{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: fit-content !important;
+}
+.face img{
+    width: 40px;
+}
+.registro{
+    border: 1px solid rgb(219,219,219);
+    display: flex;
+    height: 10vh;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.app{
+    height: 10vh;
+    text-align: center;
+    margin: 20px;
+}
+.downloads{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+}
+.login > i{
+    align-self: center;
+    font-size: 36px;
+}
+.login > input{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width:80%;
+
+}
+.entrar{
+    background-color:lightskyblue;
+    color:white;
+    width:80%;
+    padding: 10px;
+    border-radius:10px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+}
+.imagem{
+    height:620px;
+}
+.imagem > img{
+    width: 100%;
+    height: 100%;
+}
+.login > a{
+    text-decoration: none;
+    color:black;
+}
+.registro a{
+    text-decoration: none;
+}
+.microsoft{
+    height:5vh;
+}
+.gp{
+    height:5vh;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height: 20vh;
+    width: 100%;
+}
+footer > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+
+}
+footer > ul > li{
+    margin: 20px;
+    list-style: none;
+    color:  rgb(219,219,219);
+}
+.divisao{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color: rgb(219,219,219);
+}
+.divisao div{
+    height:1px;
+    background-color: rgb(219,219,219);
+    width: calc(41.5% - 25px);
+    margin: 10px;
+}
+.divisao p{
+    font-size: 15px;
+}
+.login > a:visited{
+    color:black;
+}
+.registro > a:visited{
+    color:black;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <style>
+        #container {
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            border: 3px solid black;
+            background-color:pink;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:200px;
+        }
+        #titulo{
+            text-align: center;
+        }
+        #Cadastro{
+            margin-bottom:20px;
+            margin-left:20px;
+        }
+        #inputs{
+            display: block;
+            border-radius:20px;
+            width: 300px;
+            height: 30px;
+            margin: 0 auto;
+        }
+        #botões{
+            margin-left:105px;
+            width:310px;
+            height:30px;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+    </style>
+   <div id="container">
+    <form>
+        <div id="titulo">
+            <h1>Cadastro</h1>
+        </div>
+        <div id="Cadastro">
+            <input id="inputs" type="text" name="Usuário" placeholder="Usuário">
+        </div>
+        <div id="Cadastro">
+            <input id="inputs" type="password" name="Senha" placeholder="Senha">
+        </div>
+        <div id="Cadastro">
+            <input id="inputs" type="password" name="Senha" placeholder="Confirme a Senha">
+        </div>
+        <div id="Cadastro">
+            <input id="inputs" type="email" placeholder="Email">
+        </div>
+        <div id="Cadastro">
+            <input id="inputs" type="email" placeholder="Confirme o Email">
+        </div>
+        <div>
+            <input id="botões" type="submit" name="enviar" value="Cadastrar" style="margin-bottom:20px;">    
+            <input id="botões" type="reset" name="apagar" value="Limpar Tudo">
+        </div>
+        <div>
+           <center><p><a href="login.html">Já tenho uma conta</a></p></center> 
+        </div>
+    </form>
+   </div>
+</body>
+</html>
