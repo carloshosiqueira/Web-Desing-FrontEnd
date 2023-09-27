@@ -1,116 +1,92 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    height:fit-content;
-    width: 100vw;
-    background-color:gray;
-    display:flex;
+body {
+    height: fit-content;
+    width: fit-content;
+    background-color: gray;
+    display: flex;
     flex-direction: column;
-    overflow-x: hidden;
 }
 
-header{
+header {
     background-color: blue;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 20%;
+    height: 10%;
     width: 100%;
 }
 
+.esquerdameio,
+.direita,
+.produto {
+    display: none;
+}
 
-
-.menu{
+.menu {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 10px;
 }
 
-.esquerdameio{
+.resto {
     display: flex;
     align-items: center;
-    width: 50%;
-    height: 100%;
-}
-
-.esquerdameio i{
-    color: white;
-    padding: 50px;
-}
-
-.input{
-    display: flex;
-    height: 30%;
-    width:60%;
-    position:relative;
-}
-
-.input > svg{
-    position: absolute;
-    left:96%
-}
-
-.input input{
+    justify-content: space-evenly;
+    height: 60%;
     width: 100%;
-    height:100%;
-    padding:10px;
 }
 
-.IconLogoKabum{
-    margin:20px;
+.resto>i,
+.resto>.buscar>i {
+    color: lightgray;
+    padding: 10px;
 }
 
-.direita{
-    width: fit-content;
-    height:100%;
+.buscar {
+    background-color: white;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
     display: flex;
     align-items: center;
 }
 
-.direita > i{
-    color:lightgray;
-    margin: 20px;
+.buscar>input {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
 }
 
-.direita > p{
-    color:white;
+.buscar>input:focus {
+    outline: none;
 }
 
-.direita a{
-    text-decoration: none;
-    font-weight: bold;
-    color:white;
-}
-
-.direita > p{
-    margin-right: 50px;
-}
-
-.categorias{
+.categorias {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     width: 100%;
     height: fit-content;
+    font-size: 12px;
     background-color: orangered;
-    color:white;
+    color: white;
 }
 
-.categorias div{
-padding: 10px;
+.categorias div {
+    padding: 10px;
 }
 
-.IconKabum,.resto, .baixo svg,.sociais{
-    display: none;
-}
-
-main{
+main {
     width: 100%;
     height: 70%;
     display: flex;
@@ -118,144 +94,145 @@ main{
 
 }
 
-.conteudo{
-    width: 90%;
+.conteudo {
+    width: 100%;
     height: fit-content;
-    margin-top:50px;
+    margin-top: 50px;
     background-color: white;
 }
 
-.cabecalho{
+.cabecalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height:50px;
-    color:white;
+    height: 50px;
+    color: white;
     background-color: orangered;
 }
 
-.esquerda1 > p, .direita1 > p{
-    font-size:20px;
+.esquerda1>p,
+.direita1>p {
+    font-size: 20px;
     font-weight: bold;
-    margin-left:10px;
+    margin-left: 10px;
 }
 
-.direita1 > i{
-    font-size:20px;
+.direita1>i {
+    font-size: 20px;
     margin: 0px 10px 0px 10px;
 }
 
-.direita1{
+.direita1 {
     display: flex;
 }
 
-.produtos{
-    display:grid;
-    grid-template-columns: repeat(5, 1fr);
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
     overflow-x: auto;
 }
 
 
-.produto{
+.produto {
     display: flex;
     flex-direction: column;
     width: fit-content;
-    margin:20px;
+    margin: 20px;
     text-decoration: none;
 }
 
-.produto:hover{
+.produto:hover {
     cursor: pointer;
 }
 
-.cabecalhoproduto{
+.cabecalhoproduto {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.produtos > .produto > svg{
+.produtos>.produto>svg {
     margin: 10px 0px 10px 0px;
     height: 50px;
 }
 
-.esquerda2{
-    width:40%;
+.esquerda2 {
+    width: 40%;
     display: flex;
     justify-content: space-evenly;
 }
 
-.direita2{
+.direita2 {
     width: 40%;
     display: flex;
 }
 
-.quadrado{
+.quadrado {
     width: 40px;
-    height:40px;
+    height: 40px;
     background-color: black;
     border-radius: 10px;
     margin: 10px;
 }
 
-.estrelas{
+.estrelas {
     width: 100%;
     display: flex;
     align-items: center;
-    color:orangered;
+    color: orangered;
 }
 
-.estrelas > p{
-    color:gray;
+.estrelas>p {
+    color: gray;
 }
 
-.produtos > .produto > img{
-    width: 90%; 
+.produtos>.produto>img {
+    width: 90%;
     height: 90%;
     align-self: center;
 }
 
-.riscado{
+.riscado {
     text-decoration: line-through;
-    font-size:15px;
-    color:gray;
+    font-size: 15px;
+    color: gray;
 }
 
-.valor{
-    font-size:20px;
-    color:orangered;
+.valor {
+    font-size: 20px;
+    color: orangered;
     font-weight: bold;
 }
 
-.pix{
-    color:gray;
+.pix {
+    color: gray;
 }
 
 
-.rodapeproduto{
+.rodapeproduto {
     display: flex;
     width: 100%;
     height: 40px;
-    border:1px solid orangered;
+    border: 1px solid orangered;
     border-radius: 5px;
 }
 
-.esquerda3{
-    background-color:#ff4500;
+.esquerda3 {
+    background-color: #ff4500;
     width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.esquerda3 > i{
-    color:white;
-    font-size:30px;
+.esquerda3>i {
+    color: white;
+    font-size: 30px;
 }
 
-.direita3{
+.direita3 {
     width: 75%;
     text-align: center;
     display: flex;
@@ -263,14 +240,14 @@ main{
     justify-content: space-around;
 }
 
-.direita3 > p{
-    font-size:10px;
-    color:orangered;
+.direita3>p {
+    font-size: 10px;
+    color: orangered;
 }
 
-.direita3 > .tempo{
-    font-size:15px;
-    color:orangered;
+.direita3>.tempo {
+    font-size: 15px;
+    color: orangered;
     font-weight: bold;
 }
 
@@ -286,24 +263,35 @@ footer {
 
 form {
     display: flex;
+    flex-direction: column;
+    width: 100%;
     height: fit-content;
-    width: 70%;
 }
 
 form>input {
-    height: 40px;
+    height: 50px;
     border-radius: 5px;
     border: none;
-    padding: 10px;
+    padding: 20px;
     margin: 10px;
-    width: 80%;
 }
 
 .cadastrar {
     background-color: #ff4500;
     color: white;
     font-weight: bold;
-    font-size: 20px
+    font-size: 20px;
+    padding: 10px;
+}
+
+.primeiralinha{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding:5px;
 }
 
 .botoes {
@@ -325,6 +313,25 @@ form>input {
     justify-content: space-between;
 }
 
+.sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    font-weight: bold;
+}
+
+.logos {
+    width: 50%;
+    padding: 10px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .cima{
     width: 100%;
     height: 20%;
@@ -338,17 +345,27 @@ form>input {
     width: 5%;
 }
 
-.primeiralinha{
-    width: 100%;
-    height: fit-content;
+.baixo{
+    background-color: darkblue;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.baixo div{
+    width: 90%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding:5px;
+    flex-direction: column;
 }
 
-.baixo p{
+.baixo div p{
+    font-size:12px;
+    color:white;
     text-align: center;
-    padding: 10px;
-    font-size:14px
 }
