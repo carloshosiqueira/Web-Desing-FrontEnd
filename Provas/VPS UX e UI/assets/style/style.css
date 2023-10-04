@@ -1,0 +1,199 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background-color: lightgray;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: gray;
+    width: 100%;
+    height: 15vh;
+}
+
+header > .logo >img{
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+}
+
+header > .busca > img{
+    width: 50px;
+    height: 50px;
+}
+
+.logo{
+    width: 25%;
+    height: fit-content;
+    height: fit-content;
+}
+
+.busca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius:10px;
+    width: 40%;
+    height: 40%;
+    padding: 5px;
+    
+}
+
+.busca > input{
+    border:none;
+    outline:none;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.busca:focus-within{
+    border:3px solid black;
+}
+
+.login{
+    width: 25%;
+    height: fit-content;
+}
+
+.login > span{
+    color:white
+}
+
+.login > span > a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+
+main{
+    display: grid;
+    width: 100%;
+    height: 70%;
+    grid-template-columns: 20% 80%;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding:20px 0px 20px 0px;
+}
+
+.filtros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    width: 100%;
+    border:1px solid black;
+    border-radius: 10px;
+    background-color: gray;
+}
+
+ul{
+    width: 100%;
+    height: 100%;
+}
+
+.filtros > ul > li{
+    background-color: gray;
+    color:white;
+    text-align: left;
+    padding:12px;
+    margin:2px;
+    font-size:20px;
+}
+
+.espaco{
+    height: 1px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.filtros > span{
+    background-color: black;
+    color:white;
+    width: 100%;
+    height: 10%;
+    padding:5px;
+    text-align: center;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: auto;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.produto > img{
+    width: 50%;
+    align-self: center;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    background-color: orange;
+    height: fit-content;
+    width: 100%;
+}
+
+.quemsomos{
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    justify-content: space-between;
+    color:white;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+}
+
+.contato > span{
+    margin:20px;
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+footer > .faq > ul > a > li{
+    margin-top: 50px;
+}
+
+ul > a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size:14px
+}
