@@ -12,98 +12,174 @@
 <body>
     <header>
         <div class="logo">
-            <img src="./assets/img/logo.png">
+            <a href="#"><img src="./assets/img/logo.png"></a>
         </div>
         <div class="busca">
-            <input type="search" placeholder="Buscar">
+            <input type="search" placeholder="Buscar...">
             <img src="./assets/img/lupa.png">
         </div>
         <div class="login">
             <span>Não está conectado?<br>Faça seu <a href="cadastro.html">cadastro</a> aqui ou entre com o seu <a
                     href="login.html">login</a>.</span>
         </div>
+        <div>
+            <a href="comprar" onclick="confirmacao()"><img class="compras" src="./assets/img/compras.png"></a>
+        </div>
     </header>
     <main>
         <div class="filtros">
-            <span>Filtros</span>
-            <ul>
-                <li>Nike</li>
-                <div class="espaco"></div>
-                <li>Adidas</li>
-                <div class="espaco"></div>
-                <li>Fila</li>
-                <div class="espaco"></div>
-                <li>Olimpikus</li>
-                <div class="espaco"></div>
-                <li>Mizuno</li>
-                <div class="espaco"></div>
-                <li class="asics">Asics</li> 
-            </ul>
+            <div class="classes">
+                <span>Ordenar Por:</span>
+                <select>
+                    <option>-</option>
+                    <option>Preço Crescente</option>
+                    <option>Preço Decrescente</option>
+                    <option>Populares</option>
+                    <option>Adicionados Recentemente</option>
+                </select>
+            </div>
+            <div class="classes">
+                <span>Marcas</span>
+                <select>
+                    <option>-</option>
+                    <option>Nike</option>
+                    <option>Adidas</option>
+                    <option>Fila</option>
+                    <option>Olimpikus</option>
+                    <option>Mizuno</option>
+                    <option>Asics</option>
+                </select>
+            </div>
+            <div class="classes">
+                <span>Gênero</span>
+                <select>
+                    <option>-</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                </select>
+            </div>
+            <div class="classes">
+                <span>Tamanho</span>
+                <select>
+                    <option>-</option>
+                    <option>30-31</option>
+                    <option>31-32</option>
+                    <option>32-33</option>
+                    <option>33-34</option>
+                    <option>34-35</option>
+                    <option>35-36</option>
+                    <option>36-37</option>
+                    <option>37-38</option>
+                    <option>38-39</option>
+                    <option>39-40</option>
+                    <option>40-41</option>
+                    <option>41-42</option>
+                </select>
+            </div>
+            <div class="classes">
+                <span>Outros</span>
+                <select>
+                    <option>-</option>
+                    <option>Destaques</option>
+                    <option>Promoções</option>
+                    <option>Exclusivos</option>
+                </select>
+            </div>
+            <div class="classes">
+                <span>Estilo</span>
+                <select>
+                    <option>-</option>
+                    <option>Academia</option>
+                    <option>Basquete</option>
+                    <option>Futebol</option>
+                    <option>Volei</option>
+                    <option>Skate</option>
+                    <option>Social</option>
+                </select>
+            </div>
         </div>
         <div class="produtos">
-            <div class="produto">
-                <img src="./assets/img/tenis3.webp">
-                <div class="preco">
-                    <span>R$ 429,99 via PIX<br></span>
-                    <span>R$ 449,99 em até 10x sem juros</span>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <div class="produto" onclick="mostrarAviso()">
+                    <img src="./assets/img/tenis2.webp">
+                    <div class="preco">
+                        <span class="pix">R$ 429,99 via PIX<br></span>
+                        <span class="x10">R$ 449,99 em até 10x sem juros</span>
+                    </div>
                 </div>
-            </div>
-            <div class="produto">
-                <img src="./assets/img/tenis2.webp">
-                <div class="preco">
-                    <span>R$ 429,99 via PIX<br></span>
-                    <span>R$ 449,99 em até 10x sem juros</span>
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <div class="produto" onclick="mostrarAviso()">
+                    <img src="./assets/img/tenis3.webp">
+                    <div class="preco">
+                        <span class="pix">R$ 429,99 via PIX<br></span>
+                        <span class="x10">R$ 449,99 em até 10x sem juros</span>
+                    </div>
                 </div>
-            </div>
-            <div class="produto">
-                <img src="./assets/img/tenis3.webp">
-                <div class="preco">
-                    <span>R$ 429,99 via PIX<br></span>
-                    <span>R$ 449,99 em até 10x sem juros</span>
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <div class="produto" onclick="mostrarAviso()">
+                    <img src="./assets/img/tenis3.webp">
+                    <div class="preco">
+                        <span class="pix">R$ 429,99 via PIX<br></span>
+                        <span class="x10">R$ 449,99 em até 10x sem juros</span>
+                    </div>
                 </div>
-            </div>
-            <div class="produto">
-                <img src="./assets/img/tenis3.webp">
-                <div class="preco">
-                    <span>R$ 429,99 via PIX<br></span>
-                    <span>R$ 449,99 em até 10x sem juros</span>
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <div class="produto" onclick="mostrarAviso()">
+                    <img src="./assets/img/tenis3.webp">
+                    <div class="preco">
+                        <span class="pix">R$ 429,99 via PIX<br></span>
+                        <span class="x10">R$ 449,99 em até 10x sem juros</span>
+                    </div>
                 </div>
-            </div>
-            <div class="produto">
-                <img src="./assets/img/tenis2.webp">
-                <div class="preco">
-                    <span>R$ 429,99 via PIX<br></span>
-                    <span>R$ 449,99 em até 10x sem juros</span>
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <div class="produto" onclick="mostrarAviso()">
+                    <img src="./assets/img/tenis2.webp">
+                    <div class="preco">
+                        <span class="pix">R$ 429,99 via PIX<br></span>
+                        <span class="x10">R$ 449,99 em até 10x sem juros</span>
+                    </div>
                 </div>
-            </div>
-            <div class="produto">
-                <img src="./assets/img/tenis3.webp">
-                <div class="preco">
-                    <span>R$ 429,99 via PIX<br></span>
-                    <span>R$ 449,99 em até 10x sem juros</span>
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <div class="produto" onclick="mostrarAviso()">
+                    <img src="./assets/img/tenis2.webp">
+                    <div class="preco">
+                        <span class="pix">R$ 429,99 via PIX<br></span>
+                        <span class="x10">R$ 449,99 em até 10x sem juros</span>
+                    </div>
                 </div>
-            </div>
-            <div class="produto">
-                <img src="./assets/img/tenis2.webp">
-                <div class="preco">
-                    <span>R$ 429,99 via PIX<br></span>
-                    <span>R$ 449,99 em até 10x sem juros</span>
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <div class="produto" onclick="mostrarAviso()">
+                    <img src="./assets/img/tenis2.webp">
+                    <div class="preco">
+                        <span class="pix">R$ 429,99 via PIX<br></span>
+                        <span class="x10">R$ 449,99 em até 10x sem juros</span>
+                    </div>
                 </div>
-            </div>
-            <div class="produto">
-                <img src="./assets/img/tenis2.webp">
-                <div class="preco">
-                    <span>R$ 429,99 via PIX<br></span>
-                    <span>R$ 449,99 em até 10x sem juros</span>
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <div class="produto" onclick="mostrarAviso()">
+                    <img src="./assets/img/tenis3.webp">
+                    <div class="preco">
+                        <span class="pix">R$ 429,99 via PIX<br></span>
+                        <span class="x10">R$ 449,99 em até 10x sem juros</span>
+                    </div>
                 </div>
-            </div>
-            <div class="produto">
-                <img src="./assets/img/tenis3.webp">
-                <div class="preco">
-                    <span>R$ 429,99 via PIX<br></span>
-                    <span>R$ 449,99 em até 10x sem juros</span>
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <div class="produto" onclick="mostrarAviso()">
+                    <img src="./assets/img/tenis2.webp">
+                    <div class="preco">
+                        <span class="pix">R$ 429,99 via PIX<br></span>
+                        <span class="x10">R$ 449,99 em até 10x sem juros</span>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
     </main>
     <footer>
@@ -148,7 +224,7 @@
             <span>Email:suporte.zappa@gmail.com</span>
         </div>
         <div class="faq">
-            <span>FAQs</span>
+            <h2>FAQs</h2>
             <ul>
                 <a href="">
                     <li>Como posso fazer um pedido de tênis da Zappa?</li>
@@ -190,5 +266,6 @@
         </div>
     </footer>
 </body>
+<script src="./assets/script/script.js"></script>
 
 </html>
