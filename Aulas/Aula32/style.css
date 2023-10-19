@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    padding:20px;
+    margin:5px;
+    background-color: lightblue;
+    border-radius: 20px;
+}
+
+body div{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button:hover{
+    box-shadow: 3px 3px 3px black;
+    cursor: pointer;
+    color:white;
+    font-weight: bold;
+}
