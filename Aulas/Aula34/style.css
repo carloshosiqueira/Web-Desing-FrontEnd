@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(1, 5, 58);
+    
+}
+
+.template {
+    width: 80%;
+    height: 60%;
+    color:white;
+    font-weight: bold;
+    border-radius: 75px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-image: url(fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8; 
+}
+
+
+
+.template h1{
+    margin: auto;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    
+}
+
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 70%;
+    width: 70%;
+    font-size:20px;
+    
+}
+
+#loginForm > input{
+    width: 50%;
+    height: 10%;
+    border-radius: 20px;
+}
+
+input[type="text"], input[type="password"]{
+    padding:10px;
+}
+
+.redes{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.redes i{
+    padding:10px;
+    border:1px solid rgba(255,255,255,0.4);
+    font-size: 20px;
+}
+
+.redes i:hover, .botao:hover{
+    cursor: pointer;
+}
+
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-weight: bold;
+    background-color: #ccc;
+    font-size:18px;
+}
+
+#loginForm a{
+    color:white;
+    font-size:20px;
+}
+
+.frase{
+    color:white;
+    border:2px solid white;
+    padding:10px;
+}
+
+.frase:hover{
+box-shadow: 5px 5px 20px green;
+}

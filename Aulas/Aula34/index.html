@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="template">
+        <h1>Welcome Back!</h1>
+
+        <div class="login">
+            <form id="loginForm">
+                <h2>Login</h2>
+                <label>Usuário:</label>
+                <input type="text" placeholder="Username" id="username" required>
+                <br>
+                <label>Senha:</label>
+                <input type="password" placeholder="Password" id="password" required>
+                <br>
+                <input type="submit" value="Log in" class="botao">
+
+                <p id="message"></p>
+
+                <p>Or login With</p>
+                <div class="redes">
+                    <a href="https://www.facebook.com/?locale=pt_BR"> <i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.google.com.br/?hl=pt-BR"><i class="fa-brands fa-google"></i></a>
+                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D"><i class="fa-brands fa-twitter"></i></a> 
+                </div>
+                <p>Not a member yet? <a href="#">Sign In</a></p>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/1e0e20579c.js" crossorigin="anonymous"></script>
+</html>
