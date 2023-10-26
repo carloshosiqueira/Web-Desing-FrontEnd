@@ -1,0 +1,109 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: auto;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    background-color:#161616;
+    color:white;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 40%;
+}
+
+.menus{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 100%;
+}
+
+.menus span{
+    font-size: 24px;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+.twitter{
+    width: 10%;
+}
+
+main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.designer{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-size:19px;
+    
+}
+
+.designer h1{
+    font-size:50px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.designer p{
+    color:gray;
+}
+
+.coder{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-size:19px
+    
+}
+
+.coder h1{
+    font-size:50px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.coder p{
+    color:gray;
+}
+
+.foto{
+    margin:0px 100px 0px 100px;
+    width: 600px;
+    height: 600px;
+}
+
+.foto img{
+    width: 100%;
+}
