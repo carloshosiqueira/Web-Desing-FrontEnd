@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trabalhando com dados V1.0</h1>
+    <button id="botao" onclick="clicar()">Clique para começar</button>
+</body>
+    <script>
+       document.getElementById('botao')
+
+        function clicar() {
+            let nome = window.prompt('Qual é o seu nome?');
+            alert(`Olá, ${nome}! É um prazer te conhecer!`);
+}
+
+    </script>
+</html>

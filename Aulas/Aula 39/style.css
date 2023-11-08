@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    background-color: pink;
+}
+
+main{
+    width: 50%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteudo{
+    width: 100%;
+    border:5px inset blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    margin:50px 0 50px 0;
+    border-radius: 20px;
+    box-shadow:5px 5px 10px black;
+    background: rgb(116, 4, 185);
+    color:white;
+}
+
+img{
+    width: 65px;
+    height: 65px;
+    margin-right: 50px;
+}
+
+.arquivos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:10px 0 10px 0;
+    padding:50px;
+    border-radius: 20px;
+    background: rgb(222,222,222);
+    font-size: 20px;
+    color:black;
+}
+
+a{
+    color:inherit;
+    font-weight: bold;
+}
+
+a:hover{
+    color:goldenrod;
+}
+
+.exercicios{
+    width: 100%;
+}
+
+.exercicios li{
+    margin:0 0 0 30px;
+}
+
+h2{
+    color:goldenrod;
+}
