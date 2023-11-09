@@ -4,10 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Interagindo com partes do HTML(DOM)</title>
     <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background:black;
+            color:white
+        }
+
+        h1{
+            text-shadow: 5px 5px 3px green;
+        }
+
         button{
-            padding: 30px;
+            width: 150px;
+            height: 75px;
+            margin: 50px;
+            font-size: 20px;
+            border:none;
+            border-radius: 20px;
+        }
+
+        p{
+            font-size: 20px;
+            text-shadow: 5px 5px 3px blueviolet;
         }
     </style>
 </head>
