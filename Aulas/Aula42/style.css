@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: auto;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color:white;
+    font-size: 12px;
+}
+
+header div{
+    width: 33%;
+    height: 100%;
+}
+
+.esquerda{
+    display: flex;
+    align-items: center;
+    padding:30px;
+    font-weight:bold
+}
+
+.meio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meio p{
+    margin: 0 20px 0 20px;
+}
+
+.direita{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding:30px;
+}
+
+.direita i{
+    margin: 0 10px 0 10px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal{
+    height: 90vh;
+    width: 100%;
+    padding: 80px 0 0 60px;
+}
+
+.principal div{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.principal div h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.principal button{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color:white;
+    border:none
+}
+
+.principal button:hover{
+    background-color: rgb(54, 225, 171);
+    cursor: pointer;
+}
+
+.marcas{
+    height:100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+
+.marcas div{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.best-sellers{
+    width: 95%;
+    padding:60px 0 0 20px;
+}
+
+.best-sellers h3{
+    margin-bottom: 30px;
+}
+
+.produtos{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,25%);
+    place-items: center;
+    padding:30px;
+    gap: 10px;
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 450px;
+    border:1px solid gray;
+}
+
+.nome{
+    height: 70px;
+    padding:10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.produto h4{
+    font-size: 24px;
+}
+
+.produto p{
+    font-size:12px;
+}
+
+.produto button{
+    width: 100%;
+    height: 40px;
+    background: black;
+    color:white;
+    align-self: flex-end;
+}
+
+.imagem img{
+    height: 300px;
+    width: 100%;
+}
