@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h2>Para começar, qual valor você gostaria de investir?</h2>
+        <span>R$</span>
+        <span id="valorInicial">50</span>
+        <button onclick="removerInicial()">-</button>
+        <button onclick="adicionarInicial()">+</button>
+    </div>
+    <div>
+        <h2>E por mês, quanto gostaria de depositar?</h2>
+        <span>R$</span>
+        <span id="valorMensal">50</span>
+        <button onclick="removerMensal()">-</button>
+        <button onclick="adicionarMensal()">+</button>
+    </div>
+    <div>
+        <h2>Quanto tempo deixaria seu dinheiro investido?</h2>
+        <output id="meses"></output>
+        <button onclick="removerMes()">-</button>
+        <button onclick="adicionarMes()">+</button>
+    </div>
+    
+
+
+
+    <p>Em 1 mês você teria</p>
+    <span>R$</span><output id="resInvestimento"></output>
+
+
+    <p>Total investido: R$ <output id="totalInvestido"></output></p> 
+    
+    <p>Na poupança, seu dinheiro renderia: R$</p> <output id="poupança"></output>
+    <p>Na Tesouro Prefixado, seu dinheiro renderia: R$ </p> <output id="tesouroPrefixado"></output>
+
+</body>
+<script src="script.js"></script>
+
+</html>
