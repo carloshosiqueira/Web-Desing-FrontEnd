@@ -24,24 +24,18 @@
     </div>
     <div>
         <h2>Quanto tempo deixaria seu dinheiro investido?</h2>
-        <output id="meses"></output>
-        <button onclick="removerMes()">-</button>
-        <button onclick="adicionarMes()">+</button>
+        <p id="qntdMeses">1 Mês</p>
+        <input type="range" name="meses" id="meses" min="0" max="7" value="0">
     </div>
-    
 
-
-
-    <p>Em 1 mês você teria</p>
+    <p>Em <span id="resultMeses">1</span> mês você teria</p>
     <span>R$</span><output id="resInvestimento"></output>
 
-
-    <p>Total investido: R$ <output id="totalInvestido"></output></p> 
-    
+    <p>Total investido: R$ <output id="totalInvestido"></output></p>
     <p>Na poupança, seu dinheiro renderia: R$</p> <output id="poupança"></output>
     <p>Na Tesouro Prefixado, seu dinheiro renderia: R$ </p> <output id="tesouroPrefixado"></output>
+    <hr>
 
 </body>
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </html>

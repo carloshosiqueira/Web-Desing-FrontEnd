@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Slider</title>
+</head>
+
+<body>
+    <div>
+        <h2>Quanto tempo deixaria seu dinheiro investido?</h2>
+        <p id="qntdMeses">1 Mês</p>
+        <input type="range" name="meses" id="meses" min="0" max="7" value="0">
+    </div>
+
+    <p>Em <span id="resultMeses">1</span> mês você teria</p>
+    <span>R$</span><output id="resInvestimento"></output>
+
+    <p>Total investido: R$ <output id="totalInvestido"></output></p>
+
+    <script>
+        // Mapeia os valores do slider para os meses desejados
+        const mesesMap = [1, 2, 3, 6, 12, 24, 60, 360];
+
+        document.getElementById('meses').addEventListener("input", function () {
+            var selectedMonthsIndex = parseInt(this.value);
+            var selectedMonths = mesesMap[selectedMonthsIndex];
+
+            // Atualiza a exibição do número de meses selecionados
+            document.getElementById('qntdMeses').innerHTML = `${selectedMonths} Mês${selectedMonths > 1 ? 'es' : ''}`;
+
+            // Atualiza o valor no parágrafo relacionado aos meses
+            document.getElementById('resultMeses').innerHTML = selectedMonths;
+
+            // Chama a função calculate() para recalcular o investimento com o novo número de meses
+            calculate();
+        });
+
+        function calculate() {
+            var num1 = 100; // Substitua isso pelo seu valor inicial
+            var num2 = 100; // Substitua isso pelo seu valor mensal
+            var months = mesesMap[parseInt(document.getElementById("meses").value)];
+            var total = (num1 + num2) * months * 1.0079;
+            document.getElementById("resInvestimento").innerHTML = total.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " reais";
+            document.getElementById("totalInvestido").innerHTML = (num1 + num2).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " reais";
+        }
+
+        document.getElementById("meses").addEventListener("input", function () {
+            document.getElementById("resultMeses").innerHTML = mesesMap[parseInt(this.value)];
+            calculate();
+        });
+    </script>
+</body>
+
+</html>
